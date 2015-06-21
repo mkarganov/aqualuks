@@ -3,8 +3,8 @@ title: АкваЛюкс Фильтры для Воды
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Специализированный магазин очистки воды в Черкассах Консультация по подбору фильтра для воды.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost" # the base hostname & protocol for your site
+baseurl: "/aqualuks" # the subpath of your site, e.g. /blog/
+url: "http://aqualuks.com.ua" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
