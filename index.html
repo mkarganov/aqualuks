@@ -2,22 +2,156 @@
 layout: default
 ---
 
-<div class="home">
+<!-- <div class="home"> -->
 
-  <h1 class="page-heading">Posts</h1>
+<!--   <h1 class="page-heading">Posts</h1> -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!--   <ul class="post-list"> -->
+<!--     {% for post in site.posts %} -->
+<!--       <li> -->
+<!--         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+<!--         <h2> -->
+<!--           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+<!--         </h2> -->
+<!--       </li> -->
+<!--     {% endfor %} -->
+<!--   </ul> -->
+
+<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+<!-- </div> -->
+<div class='home' id='aqualuks-top'>
+  <div id='aqualuks-carousel' class='carousel slide' data-ride='carousel'>
+    <div class='carousel-inner'>
+      <div class='item active'>
+        <video id='bgvid' poster='/images/aqua.png' autoplay='true'>
+          <source src='/images/Water_Wave_Warp.mp4'>
+          <source src='/images/Water_Wave_Warp_720.webm'>
+        </video>
+        <div class='container'>
+          <div id="home-title" class='carousel-caption'>
+            <h1>Аквалюкс</h1>
+            <p>ЗДОРОВЬЕ И ЧИСТОТА</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='aqualuks-service' class='aqualuks-service'>
+  <div class='container'>
+    <div class=row>
+      <div class='col-md-4'>
+        <div class='aqualuks-service-item'>
+          <div>
+            <!-- <img src='' alt='icon'> -->
+            <span class='aqualuks-service-item-header'>Подбор фильтра</span>
+            <p>
+              Наш магазин предоставляет профессиональную консультацию по подбору фильтра для воды любого типа и сложности. Мы расскажем Вам плюсы и минусы каждого, а так же поможем сделать наиболее подходящий выбор, учитывая особенности Вашей семьи. Так же, если Вы заинтересованы в более масштабной очистке воды, у нас Вы сможете подобрать промышленную систему для обслуживания многоэтажного дома или жилого комплекса.
+            </p>
+            <!-- <a href='#' class='aqualuks-btn-read-more btn btn-orange'>Read more -->
+            <div class='clearfix'></div>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-md-4'>
+        <div class='aqualuks-service-item'>
+          <div>
+            <span class='aqualuks-service-item-header'>Ассортимент</span>
+            <p>
+              Ассортимент постоянно растет. У нас Вы найдете практически все, что связанно с водой, от простых фильтров кувшинного типа, смесителей, радиаторов, котлов, заканчивая средствами для очистки бассейнов, кулерами и системами премиум класса.
+            </p>
+            <div class='clearfix'></div>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-md-4'>
+        <div class='aqualuks-service-item'>
+          <div>
+            <span class='aqualuks-service-item-header'>Сервис</span>
+            <p>
+              Мы предоставляем полный набор услуг по установке и обслуживанию систем очистки воды. Мы заботимся о каждом нашем клиенте и обязательно напомним, когда подошло время обслуживания Вашего фильтра!
+            </p>
+            <div class='clearfix'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='aqualuks-about' class='aqualuks-team'>
+  <div class='container'>
+    <div class='row'>
+      <div class='aqualuks-line-header'>
+        <div class='text-center'>
+          <hr class='team_hr team_hr_left'>
+            <span> О НАС</span>
+          </hr>
+          <hr class='team_hr team_hr_right'></hr>
+        </div>
+      </div>
+    </div>
+    <div class='clearfix'></div>
+    <ul class='row row_team'>
+      <li class='col-lg-3 col-md-3 col-sm-6'>
+        <div class=text-center>
+          <!-- <div class="member-thumb"> -->
+              <!-- <img src="images/member1.jpg" class="img-responsive" alt="member 1" /> -->
+              <!-- <div class="thumb-overlay"> -->
+              <!--     <a href="#"><span class="social-icon-fb"></span></a> -->
+              <!--     <a href="#"><span class="social-icon-twitter"></span></a> -->
+              <!--     <a href="#"><span class="social-icon-linkedin"></span></a> -->
+          <!-- </div> -->
+          <div class=team-inner>
+            <p class='team-inner-header'>Борис</p>
+            <p class='team-inner-subtext'>Директор</p>
+          </div>
+        </div>
       </li>
-    {% endfor %}
-  </ul>
+      <li class='col-md-9 col-sm-6'>
+        <div>
+          <h4>
+            Здравствуйте! Меня зовут Борис и я основатель магазина «АкваЛюкс». В сфере, связанной с водой, я более 17-ти лет. На протяжении этого времени мне довелось изучить многие особенности работы с водой от правильного проведения водопровода в доме/квартире до влияния воды на здоровье человека. Так же я узнал о качестве воды, которая течет из нашего с Вами крана и в окресных селах/городах. В наше время этот вопрос стоит как никогда актуально. Поэтому я решил создать место, где каждый человек может получить профессиональный совет, консультацию о фильтрах для воды, как самых простых, так и самых сложных систем водоочистки. И у нас это успешно получается уже более 4-х лет. Я готов помочь и поделиться своим опытом с Вами.
+          </h4>
+        </div>
+      </li>
+  </div>
+</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id='aqualuks-contact'>
+  <div class='container'>
+    <div class='row'>
+      <div class='aqualuks-line-header head_contact'>
+        <div class='text-center'>
+          <hr class='team_hr team_hr_left hr_gray'>
+            <span>СВЯЗАТЬСЯ С НАМИ</span>
+          <hr class='team_hr team_hr_right hr_gray'>
+        </div>
+      </div>
+      <div class='col-md-8'>
+        <div id='map-canvas' class='aqualuks-contact-map'></div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='col-md-4 contact_right'>
+        <p>Вы всегда можете связаться с нами одним из следующих способов:</p>
+        <p>
+          <i class='fa fa-map-marker'>бул. Шевченка, 352 Черкаси, Украина 18000</i>
+        </p>
+        <p>
+          <i class='fa fa-phone'>+38-0472-56-96-99</i>
+        </p>
+        <p>
+          <i class='fa fa-phone'>+38-097-293-54-57</i>
+        </p>
+        <p>
+          <i class='fa fa-envelope'>aqualuks.filters@gmail.com</i>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
