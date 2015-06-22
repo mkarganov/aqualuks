@@ -25,9 +25,9 @@ layout: default
   <div id='aqualuks-carousel' class='carousel slide' data-ride='carousel'>
     <div class='carousel-inner'>
       <div class='item active'>
-        <video id='bgvid' poster='/images/aqua.png' autoplay='true'>
-          <source src='/images/Water_Wave_Warp.mp4'>
-          <source src='/images/Water_Wave_Warp_720.webm'>
+        <video id='bgvid' poster="{{ '/images/aqua.png' | prepend: site.baseurl }}" autoplay='true'>
+          <source src="{{ '/images/Water_Wave_Warp.mp4' | prepend: site.baseurl }}">
+          <source src="{{ '/aqualuks/images/Water_Wave_Warp_720.webm' | prepend: site.baseurl }}">
         </video>
         <div class='container'>
           <div id="home-title" class='carousel-caption'>
@@ -89,10 +89,10 @@ layout: default
     <div class='row'>
       <div class='aqualuks-line-header'>
         <div class='text-center'>
-          <hr class='team_hr team_hr_left'>
-            <span> О НАС</span>
-          </hr>
-          <hr class='team_hr team_hr_right'></hr>
+          <!-- <hr class='team_hr team_hr_left'> -->
+          <h3>О НАС</h3>
+          <!-- </hr> -->
+          <!-- <hr class='team_hr team_hr_right'></hr> -->
         </div>
       </div>
     </div>
@@ -123,14 +123,65 @@ layout: default
   </div>
 </div>
 
+
+<div id='aqualuks-blog'>
+  <div class='container'>
+    <div class='row'>
+      <div class='aqualuks-line-header' style='margin-top:0px'>
+        <div class='row' style='margin-top:0px;'>
+          <div class='text-center'>
+            <h3>СТАТЬИ</h3>
+          </div>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='blog_box'>
+      <div class='col-sm-5 col-md-6 blog_post'>
+        <ul class='list-inline'>
+          <li class='col-md-4'><img src='#'></li>
+          <li class='col-md-8'>
+            <div class='pull-left'>
+              <span class='blog_header'>Название Статьи</span>
+            </div>
+            <div class='pull-right'>
+              <a href='#' class='btn btn-orange' role='button'>Читать ></a>
+            </div>
+            <div class='clearfix'></div>
+            <p class='blog_text'>Текст Статьи</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class='col-sm-5 col-md-6 blog_post'>
+        <ul class='list-inline'>
+          <li class='col-md-4'><img src='#'></li>
+          <li class='col-md-8'>
+            <div class='pull-left'>
+              <span class='blog_header'>Название Статьи</span>
+            </div>
+            <div class='pull-right'>
+              <a href='#' class='btn btn-orange' role='button'>Читать ></a>
+            </div>
+            <div class='clearfix'></div>
+            <p class='blog_text'>Текст Статьи</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <div id='aqualuks-contact'>
   <div class='container'>
     <div class='row'>
       <div class='aqualuks-line-header head_contact'>
         <div class='text-center'>
-          <hr class='team_hr team_hr_left hr_gray'>
-            <span>СВЯЗАТЬСЯ С НАМИ</span>
-          <hr class='team_hr team_hr_right hr_gray'>
+          <!-- <hr class='team_hr team_hr_left hr_gray'> -->
+            <!-- <span>СВЯЗАТЬСЯ С НАМИ</span> -->
+          <!-- <hr class='team_hr team_hr_right hr_gray'> -->
+          <h3>СВЯЗАТЬСЯ С НАМИ</h3>
         </div>
       </div>
       <div class='col-md-8'>
@@ -140,17 +191,63 @@ layout: default
       <div class='col-md-4 contact_right'>
         <p>Вы всегда можете связаться с нами одним из следующих способов:</p>
         <p>
-          <i class='fa fa-map-marker'>бул. Шевченка, 352 Черкаси, Украина 18000</i>
+          <i class='glyphicon glyphicon-map-marker'></i>бул. Шевченка, 352 Черкаси, Украина 18000
         </p>
         <p>
-          <i class='fa fa-phone'>+38-0472-56-96-99</i>
+          <i class='glyphicon glyphicon-earphone'></i>+38-0472-56-96-99
         </p>
         <p>
-          <i class='fa fa-phone'>+38-097-293-54-57</i>
+          <i class='glyphicon glyphicon-earphone'></i>+38-097-293-54-57
         </p>
         <p>
-          <i class='fa fa-envelope'>aqualuks.filters@gmail.com</i>
+          <i class='glyphicon glyphicon-envelope'></i>aqualuks.filters@gmail.com
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='aqualuks-tweets'>
+  <div class='container'>
+    <div class='row' style='margin-top:20px;'>
+      <div class='col-md-2'></div>
+      <div class='col-md-1'>
+        <img src="{{'/images/quote.png' | prepend: site.baseurl}}">
+      </div>
+      <div class='col-md-7'>
+        <span>Мы познаём ценность воды лишь когда колодец пересыхает.</span>
+        <br/>
+        <span class='twitter_user'>Бенджамин Франклин</span>
+      </div>
+      <div class='col-md-2'></div>
+    </div>
+  </div>
+</div>
+
+<div class='aqualuks-partners'>
+  <div class='container'>
+    <div class='row'>
+      <div class='aqualuks-line-header'>
+        <div class='text-center'>
+          <span class='txt_darkgrey'>НАШИ ПАРТНЕРЫ</span>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+      <div class='text-center'>
+        <div class='row'>
+          <div class='col-xs-3'>
+            <img src="{{'/images/aquafilter_partner.jpg' | prepend: site.baseurl}}" class='img-responsive'>
+          </div>
+          <div class='col-xs-3'>
+            <img src="{{'/images/blue_partner.jpg' | prepend: site.baseurl}}" class='img-responsive'>
+          </div>
+          <div class='col-xs-3'>
+            <img src="{{'/images/atoll_partner.jpg' | prepend: site.baseurl}}" class='img-responsive'>
+          </div>
+          <div class='col-xs-3'>
+            <img src="{{'/images/ecosoft_partner.png' | prepend: site.baseurl}}" class='img-responsive'>
+          </div>
+        </div>
       </div>
     </div>
   </div>
