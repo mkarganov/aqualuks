@@ -189,6 +189,19 @@ video#bgvid {
     margin-top: 30px;
 }
 
+.big-icon {
+  font-size: 70px;
+  &.green {
+    color: #48DA3F;
+  }
+  &.blue {
+    color: #4585CD;
+  }
+  &.grey {
+    color: #626262;
+  }
+}
+
 .aqualuks-service-item {
     font-family:  'Open Sans', sans-serif;
     margin-bottom: 10px;
@@ -315,13 +328,13 @@ video#bgvid {
 .aqualuks-team {
     background: url('../images/background.png');
     font-family:  'Open Sans', sans-serif;
-    min-height:590px;
+    min-height:500px;
     color:#ffffff;
 
 }
 .aqualuks-line-header {
     // margin-top:100px;
-    margin-bottom:80px;
+    margin-bottom:60px;
 }
 
 .member-thumb:hover .thumb-overlay {
@@ -370,7 +383,7 @@ video#bgvid {
 
 .row_team {
     margin-left:-50px;
-    margin-top:70px;
+    margin-top:0;
 }
 
 .row_team li {
@@ -461,9 +474,10 @@ video#bgvid {
 }
 
 #aqualuks-contact {
-	// margin-top:100px;
-	// border-top: 1px solid #cccccc;
-	font-size:14px;
+  // margin-top:100px;
+  border-top: 1px solid #cccccc;
+  font-size:14px;
+  // border-top: 2px solid #cccccc;
 }
 .aqualuks-contact-map {
     margin-bottom: 15px;
@@ -472,8 +486,8 @@ video#bgvid {
 }
 
 .head_contact {
-    padding-bottom:80px;
-    margin-bottom:0;
+  padding-bottom:60px;
+  margin-bottom:0;
 }
 
 .contact_right i {

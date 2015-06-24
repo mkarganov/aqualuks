@@ -25,7 +25,7 @@ layout: default
   <div id='aqualuks-carousel' class='carousel slide' data-ride='carousel'>
     <div class='carousel-inner'>
       <div class='item active'>
-        <video id='bgvid' poster="" autoplay='true' loop='true'>
+        <video id='bgvid' poster="{{ /images/aqua.png | prepend: site.url }}" autoplay='true' loop='true'>
           <source src="{{ '/images/Water_Wave_Warp.mp4' | prepend: site.url }}">
           <source src="{{ '/images/Water_Wave_Warp_720.webm' | prepend: site.url }}">
         </video>
@@ -45,8 +45,9 @@ layout: default
     <div class=row>
       <div class='col-md-4'>
         <div class='aqualuks-service-item'>
-          <div>
+          <div class='text-center'>
             <!-- <img src='' alt='icon'> -->
+            <div class='row'><span class='big-icon green glyphicon glyphicon-ok'></span></div>
             <span class='aqualuks-service-item-header'>Подбор фильтра</span>
             <p>
               Наш магазин предоставляет профессиональную консультацию по подбору фильтра для воды любого типа и сложности. Мы расскажем Вам плюсы и минусы каждого, а так же поможем сделать наиболее подходящий выбор, учитывая особенности Вашей семьи. Так же, если Вы заинтересованы в более масштабной очистке воды, у нас Вы сможете подобрать промышленную систему для обслуживания многоэтажного дома или жилого комплекса.
@@ -59,7 +60,8 @@ layout: default
 
       <div class='col-md-4'>
         <div class='aqualuks-service-item'>
-          <div>
+          <div class='text-center'>
+            <div class='row'><span class='big-icon grey glyphicon glyphicon-shopping-cart'></span></div>
             <span class='aqualuks-service-item-header'>Ассортимент</span>
             <p>
               Ассортимент постоянно растет. У нас Вы найдете практически все, что связанно с водой, от простых фильтров кувшинного типа, смесителей, радиаторов, котлов, заканчивая средствами для очистки бассейнов, кулерами и системами премиум класса.
@@ -71,7 +73,8 @@ layout: default
 
       <div class='col-md-4'>
         <div class='aqualuks-service-item'>
-          <div>
+          <div class='text-center'>
+            <div class='row'><span class='big-icon blue glyphicon glyphicon-thumbs-up'></span></div>
             <span class='aqualuks-service-item-header'>Сервис</span>
             <p>
               Мы предоставляем полный набор услуг по установке и обслуживанию систем очистки воды. Мы заботимся о каждом нашем клиенте и обязательно напомним, когда подошло время обслуживания Вашего фильтра!
@@ -229,7 +232,7 @@ layout: default
     <div class='row'>
       <div class='aqualuks-line-header'>
         <div class='text-center'>
-          <span class='txt_darkgrey'>НАШИ ПАРТНЕРЫ</span>
+          <h3 class='txt_darkgrey'>НАШИ ПАРТНЕРЫ</h3>
         </div>
       </div>
       <div class='clearfix'></div>
