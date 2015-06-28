@@ -453,24 +453,27 @@ video#bgvid {
     padding-top: 100px;
 }
 
-.span_blog {
-    margin-bottom: 80px;
-}
+#aqualuks-blog {
 
-.blog_post {
-    color: #333333;
-    padding: 10px;
-}
+  .span_blog {
+      margin-bottom: 80px;
+  }
 
-.blog_header {
-    font-weight: bold;
-    font-size: 16px;
-}
+  .blog_post {
+      color: #333333;
+      padding: 10px;
+  }
 
-.blog_text {
-    text-align: justify;
-    font-size: 14px;
-    margin-top: 20px;
+  .blog_header {
+      font-weight: bold;
+      font-size: 16px;
+  }
+
+  .blog_text {
+      text-align: justify;
+      font-size: 14px;
+      margin-top: 20px;
+  }
 }
 
 #aqualuks-contact {
@@ -656,6 +659,10 @@ ul.aqualuks-project-gallery  li  a img:hover {
 
 .blog_box {
 	margin-left: -12px;
+}
+
+#post {
+  font-size: 16px;
 }
 
 @media (min-width:991px) and (max-width:1200px) {

@@ -54,7 +54,7 @@ $ ->
       $(linkClass).fadeIn()
 
 this.initialize = ->
-  myLatLang = new google.maps.LatLng(49.430425, 32.082984)
+  myLatLang = new google.maps.LatLng(49.4302024, 32.0834765)
   mapOptions =
     zoom: 16
     center: myLatLang
@@ -64,7 +64,7 @@ this.initialize = ->
   marker = new google.maps.Marker(
     position: myLatLang
     map: map
-    title: "TEST"
+    title: "АкваЛюкс"
   )
 
 # scroll animation
